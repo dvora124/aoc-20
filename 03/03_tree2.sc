@@ -1,3 +1,4 @@
+import scala .annotation.tailrec
 import java  .io.File
 import scala .io.Source
 
@@ -6,6 +7,7 @@ class  CTreeGrid ( val Data : Seq[String] )
   def              CountTrees                              ( mr    : Int,
                                                              mc    : Int ) : Int =
   {
+    @tailrec
     def            hilfe                                   ( r     : Int,
                                                              c     : Int,
                                                              accum : List[Char] ) : List[Char] =
